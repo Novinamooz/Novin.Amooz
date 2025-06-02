@@ -1,0 +1,84 @@
+body {
+      font-family: "Vazirmatn", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+      color: #333;
+    }
+    header {
+      background-color: #fffacd;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #ffc0cb;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #5a005a;
+      font-weight: bold;
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .hero img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      filter: brightness(0.8);
+    }
+    .hero-text {
+      position: absolute;
+      top: 30%;
+      right: 10%;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #5a005a;
+    }
+    .hero-text span {
+      display: block;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      color: #000;
+    }
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .section img {
+      max-width: 300px;
+      margin-top: 1rem;
+    }
+    .faq {
+      padding: 2rem;
+      background-color: #fffacd;
+    }
+    .faq h3 {
+      color: #5a005a;
+    }
+    .faq-item {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+    .contact-section {
+      background: linear-gradient(to bottom, #fffacd, #f8d7da);
+      padding: 2rem;
+      text-align: center;
+      color: #5a005a;
+    }
+    .footer {
+      background-color: #ffe4e1;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
