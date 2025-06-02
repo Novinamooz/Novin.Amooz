@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <nav>
       <ul>
@@ -22,7 +23,7 @@
       <img src="https://img.freepik.com/free-vector/language-learning-concept-illustration_114360-8185.jpg" alt="نوین آموز در یک نگاه">
       <div class="hero-text">
         <h1>نوین آموز در یک نگاه</h1>
-        <div class="oval-button">اطلاعات بیشتر <span>➜</span></div>
+        <div class="oval-button">اطلاعات بیشتر <span>⬅</span></div>
       </div>
     </div>
   </header>
@@ -42,42 +43,45 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
     <section class="faq">
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سوالات متداول - نوین آموز</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+      <h2>سوالات متداول</h2>
+      <ul>
+        <li>
+          <button class="question">چرا آموزشگاه زبان نوین آموز؟</button>
+          <div class="answer">چون اینجا درس خوندن با یه عالمه بازی و فعالیت‌های جالب و نوین همراهه و با جدیدترین و به‌روزترین متدها، یه زبان جدید یاد می‌گیری!</div>
+        </li>
+        <li>
+          <button class="question">چه کسایی می‌تونن ثبت‌نام کنن؟</button>
+          <div class="answer">توی نوین آموز، مهم نیست چه سنی هستی! تو با توجه به سطح زبانت با هم‌سن‌های خودت می‌افتی و کلاس برات خسته‌کننده نمی‌شه!</div>
+        </li>
+        <li>
+          <button class="question">چه زبان‌هایی تدریس میشه؟</button>
+          <div class="answer">آلمانی، فرانسوی، ترکی استانبولی، انگلیسی و کره‌ای</div>
+        </li>
+        <li>
+          <button class="question">چطوری می‌تونم تعیین سطح کنم؟</button>
+          <div class="answer">ما برات تعیین سطح هم می‌کنیم. نگران نباش!</div>
+        </li>
+        <li>
+          <button class="question">بقیه سوال‌هام رو کجا بپرسم؟</button>
+          <div class="answer">توی قسمت تماس با ما، با نوین آموز در ارتباط باش و سوالاتت رو بپرس...</div>
+        </li>
+      </ul>
+    </section>
 
-  <section class="faq">
-    <h2>سوالات متداول</h2>
-    <ul>
-      <li>
-        <button class="question">چرا آموزشگاه زبان نوین آموز؟</button>
-        <div class="answer">چون اینجا درس خوندن با یه عالمه بازی و فعالیت‌های جالب و نوین همراهه و با جدیدترین و به‌روزترین متدها، یه زبان جدید یاد می‌گیری!</div>
-      </li>
-      <li>
-        <button class="question">چه کسایی می‌تونن ثبت‌نام کنن؟</button>
-        <div class="answer">توی نوین آموز، مهم نیست چه سنی هستی! تو با توجه به سطح زبانت با هم‌سن‌های خودت می‌افتی و کلاس برات خسته‌کننده نمی‌شه!</div>
-      </li>
-      <li>
-        <button class="question">چه زبان‌هایی تدریس میشه؟</button>
-        <div class="answer">آلمانی، فرانسوی، ترکی استانبولی، انگلیسی و کره‌ای</div>
-      </li>
-      <li>
-        <button class="question">چطوری می‌تونم تعیین سطح کنم؟</button>
-        <div class="answer">ما برات تعیین سطح هم می‌کنیم. نگران نباش!</div>
-      </li>
-      <li>
-        <button class="question">بقیه سوال‌هام رو کجا بپرسم؟</button>
-        <div class="answer">توی قسمت تماس با ما، با نوین آموز در ارتباط باش و سوالاتت رو بپرس...</div>
-      </li>
-    </ul>
-  </section>
+    <footer>
+      <div class="footer-wave"></div>
+      <div class="footer-content">
+        <p>۰۹۳۰۰۳۷۹۰۵۳<br>۳۲۸۶۶۲۱۴<br>
+          کرج، بلوار هفت تیر، نرسیده به میدان امام حسین، خیابان شهید صدوقی، کوچه نعمتی<br>
+          آموزشگاه زبان نوین آموز<br>
+          زیر نظر معاونت آموزش و پرورش
+        </p>
+        <p>اینستاگرام: <a href="https://instagram.com/novin.amooz.institute" target="_blank">@novin.amooz.institute</a></p>
+      </div>
+    </footer>
+  </main>
 
   <script>
     document.querySelectorAll(".faq .question").forEach(button => {
@@ -89,7 +93,6 @@
           answer.style.maxHeight = null;
           li.classList.remove("active");
         } else {
-          // بستن بقیه آیتم‌ها (اختیاری)
           document.querySelectorAll(".faq li").forEach(otherLi => {
             if (otherLi !== li) {
               otherLi.classList.remove("active");
@@ -104,20 +107,5 @@
     });
   </script>
 
-</body>
-</html>
-      
-    <footer>
-      <div class="footer-wave"></div>
-      <div class="footer-content">
-        <p>۰۹۳۰۰۳۷۹۰۵۳<br>۳۲۸۶۶۲۱۴<br>
-          کرج، بلوار هفت تیر، نرسیده به میدان امام حسین، خیابان شهید صدوقی، کوچه نعمتی<br>
-          آموزشگاه زبان نوین آموز<br>
-          زیر نظر معاونت آموزش و پرورش
-        </p>
-        <p>اینستاگرام: <a href="https://instagram.com/novin.amooz.institute" target="_blank">@novin.amooz.institute</a></p>
-      </div>
-    </footer>
-  </main>
 </body>
 </html>
