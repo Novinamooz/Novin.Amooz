@@ -43,16 +43,70 @@
     </section>
 
     <section class="faq">
-      <h2>سوالات متداول</h2>
-      <ul>
-        <li><strong>چرا آموزشگاه زبان نوین آموز؟</strong> چون اینجا درس خوندن با یه عالمه بازی و فعالیت‌های جالب و نوین همراهه و با جدیدترین و به‌روزترین متدها، یه زبان جدید یاد می‌گیری!</li>
-        <li><strong>چه کسایی می‌تونن ثبت‌نام کنن؟</strong> توی نوین آموز، مهم نیست چه سنی هستی! تو با توجه به سطح زبانت با هم‌سن‌های خودت می‌افتی و کلاس برات خسته‌کننده نمی‌شه!</li>
-        <li><strong>چه زبان‌هایی تدریس میشه؟</strong> آلمانی، فرانسوی، ترکی استانبولی، انگلیسی و کره‌ای</li>
-        <li><strong>چطوری می‌تونم تعیین سطح کنم؟</strong> ما برات تعیین سطح هم می‌کنیم. نگران نباش!</li>
-        <li><strong>بقیه سوال‌هام رو کجا بپرسم؟</strong> توی قسمت تماس با ما، با نوین آموز در ارتباط باش و سوالاتت رو بپرس...</li>
-      </ul>
-    </section>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سوالات متداول - نوین آموز</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <section class="faq">
+    <h2>سوالات متداول</h2>
+    <ul>
+      <li>
+        <button class="question">چرا آموزشگاه زبان نوین آموز؟</button>
+        <div class="answer">چون اینجا درس خوندن با یه عالمه بازی و فعالیت‌های جالب و نوین همراهه و با جدیدترین و به‌روزترین متدها، یه زبان جدید یاد می‌گیری!</div>
+      </li>
+      <li>
+        <button class="question">چه کسایی می‌تونن ثبت‌نام کنن؟</button>
+        <div class="answer">توی نوین آموز، مهم نیست چه سنی هستی! تو با توجه به سطح زبانت با هم‌سن‌های خودت می‌افتی و کلاس برات خسته‌کننده نمی‌شه!</div>
+      </li>
+      <li>
+        <button class="question">چه زبان‌هایی تدریس میشه؟</button>
+        <div class="answer">آلمانی، فرانسوی، ترکی استانبولی، انگلیسی و کره‌ای</div>
+      </li>
+      <li>
+        <button class="question">چطوری می‌تونم تعیین سطح کنم؟</button>
+        <div class="answer">ما برات تعیین سطح هم می‌کنیم. نگران نباش!</div>
+      </li>
+      <li>
+        <button class="question">بقیه سوال‌هام رو کجا بپرسم؟</button>
+        <div class="answer">توی قسمت تماس با ما، با نوین آموز در ارتباط باش و سوالاتت رو بپرس...</div>
+      </li>
+    </ul>
+  </section>
+
+  <script>
+    document.querySelectorAll(".faq .question").forEach(button => {
+      button.addEventListener("click", () => {
+        const li = button.parentElement;
+        const answer = li.querySelector(".answer");
+
+        if (li.classList.contains("active")) {
+          answer.style.maxHeight = null;
+          li.classList.remove("active");
+        } else {
+          // بستن بقیه آیتم‌ها (اختیاری)
+          document.querySelectorAll(".faq li").forEach(otherLi => {
+            if (otherLi !== li) {
+              otherLi.classList.remove("active");
+              otherLi.querySelector(".answer").style.maxHeight = null;
+            }
+          });
+
+          li.classList.add("active");
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+      
     <footer>
       <div class="footer-wave"></div>
       <div class="footer-content">
